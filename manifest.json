@@ -1,0 +1,23 @@
+{
+    "version": "1.2",
+    "manifest_version": 3.0,
+    "name": "Up button",
+    "description": "Adds button on every page that enables to lift the page at the top.",
+    "permissions": ["activeTab"],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "up_button_@1.0",
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
+        }
+    },
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "css": ["style.css"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "homepage_url": "https://github.com/lipaev/up_button"
+}
