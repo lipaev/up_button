@@ -1,5 +1,5 @@
 {
-    "version": "1.3",
+    "version": "1.4",
     "manifest_version": 3.0,
     "name": "Up button",
     "description": "Adds button on every page that enables to lift the page at the top.",

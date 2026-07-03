@@ -4,9 +4,9 @@ linkObject.textContent = "TOP"
 linkObject.id = "topExtensionButton"
 document.addEventListener("scroll", () => {
     let exist = document.querySelector("#topExtensionButton")
-    if (window.scrollY !== 0 && !exist) {
+    if (window.scrollY >= window.innerHeight / 2 && !exist) {
         document.body.append(linkObject)
-    } else if (window.scrollY === 0 && exist) {
+    } else if (window.scrollY <= window.innerHeight / 2 && exist) {
         exist.remove()
     }
 })
