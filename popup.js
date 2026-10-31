@@ -16,4 +16,8 @@ chrome.tabs.query({active: true, currentWindow: true}).then(arr => {
     toggleButton.addEventListener("change", () => {
         chrome.storage.local.set({[host]: {displayButton: !toggleButton.checked}})
     })
+
+    //add page location to label
+    let hidingLabel = document.querySelector("#hidingLabel")
+    hidingLabel.innerText = hidingLabel.innerText + host
 })

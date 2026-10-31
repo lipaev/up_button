@@ -1,8 +1,8 @@
 {
-    "version": "1.5.1",
+    "version": "1.5.1.1",
     "manifest_version": 3,
-    "name": "Up button",
-    "description": "Adds button on every page that enables to lift the page at the top.",
+    "name": "Scroll to Top",
+    "description": "Adds a button in an every page that enables to scroll at the top of the page.",
     "permissions": ["activeTab", "storage"],
     "browser_specific_settings": {
         "gecko": {
