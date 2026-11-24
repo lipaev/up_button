@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,24 @@
         #toggleButton {
             width: max-content;
         }
+
+        #title {
+            margin: 0;
+        }
     </style>
 </head>
+
 <body>
-    <div id="toggleButton"><label id="hidingLabel" for="toggleCheckbox">Hide button for </label><input id="toggleCheckbox" type="checkbox"></div>
+    <h3 id="title">Settings for</h3>
+    <div id="toggleButton"><label id="hidingLabel" for="toggleCheckbox">Hide button </label><input id="toggleCheckbox"
+            type="checkbox"></div>
+    <div id="positionButton"><label id="positionLabel" for="positionOptions">Button position </label>
+        <select id="positionOptions">
+            <option>Right</option>
+            <option>Left</option>
+        </select>
+    </div>
     <script type="module" src="popup.js"></script>
 </body>
+
 </html>

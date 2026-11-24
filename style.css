@@ -1,4 +1,4 @@
-#topExtensionButton {
+#scrollToTopButton {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
@@ -12,6 +12,10 @@
     z-index: 9999;
     cursor: pointer;
 }
-#topExtensionButton:hover {
+#scrollToTopButton:hover {
     background: rgba(140, 140, 140, 0.9);
+}
+#scrollToTopButton.left {
+    right: unset;
+    left: 1rem;
 }
